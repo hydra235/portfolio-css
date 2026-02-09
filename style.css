@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+}
+
+.pres-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 350px 0;
+    margin-top: 15%;
+    font-family: "Montserrat", sans-serif;
+    color: #75bdff
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    color: #0166c2;
+    font-size: 5rem;
+}
+
+.pres-box h2 {
+    font-size: 2.5rem;
+}
+
+main {
+    background-color: aliceblue;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+}
+
+.info-h2 {
+    color: #0166c2;
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif
+}
+.info-p {
+    color: #0166c2;
+    font-family: "Montserrat", sans-serif
+}
+
+.title-box {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.skill {
+    margin-left: 30px;
+}
+
+.skill > p, .skill > h2 {
+    margin-bottom: 20px;
+    margin-left: 22rem;
+}
+
+.skill-img {
+    width: 300px;
+    width: 300px;
+    border-radius: 20%;
+    float: left;
+    border: 3px solid #e3f1ff;
+}
+
+#profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #75bdff;
+}
+
+hr {
+    margin-top: 75px;
+    color: #0166c2;
+    width: 12%;
+    border: 5px dashed #73a7d877;
+    border-bottom: none;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 20px;
+}
+
+.projet {
+    background-color: #75bdff;
+    padding: 20px;
+    border-radius: 23px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.projet_lien {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.projet:hover {
+    background-color: #0166c2;
+    cursor: pointer;
+}
+.projet:active {
+    background-color: #75bdff;
+}
+.projet > p {
+    font-family: "Montserrat";
+}
+.projet > img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8%;
+    height: auto;
+}
+
+footer {
+    background-color: #337ec4;
+    color: white;
+    font-family: "Montserrat";
+    padding: 30px;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page{
+    text-decoration: none;
+    background: #FFE30B;
+    background: linear-gradient(to right, #FFE30B 0%, #B451CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.contact-box button {
+    padding: 20px;
+    border: 2px solid #7e7e7e;
+    background-color: #e9f0ff;
+    border-radius: 10%;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.contact-box button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+.contact-box button:active {
+    background-color: #0166c2;
+    cursor: pointer;
+}
+.contact-box > .contact-buttons > button > svg {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+
+
+@media (max-width: 800px){
+    .pres-container, .intro-container, .title-box {
+        text-align: center;
+    }
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1000px) {
+    .skill {
+        display: flex;
+        flex-direction: column;
+    }
+    .skill > p, .skill > h2 {
+        margin: 20px 0 10px 0;
+    }
+    .skill-img {
+        width: 200px;
+    }
+}
